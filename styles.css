@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff6dc;
+  font-family: 'Playpen Sans', Calibri, Tahoma, sans-serif;
+}
+
+#title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+#gameboard {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #9e9fa5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #9e9fa5;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 10px solid #c4c1a4;
+  box-sizing: border-box;
+}
+
+.cross {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before,
+.cross:after {
+  content: '';
+  position: absolute;
+  background-color: #ffc6ac;
+}
+
+.cross:before {
+  left: 50%;
+  width: 10%;
+  margin-left: -5%;
+  height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 10%;
+  margin-top: -5%;
+  width: 100%;
+}
+
+.button {
+  background-color: #dfccfb;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
