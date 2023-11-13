@@ -13,6 +13,7 @@ const SQUARE_CLASS = 'square'
 
 const gameBoard = document.querySelector('#gameboard')
 
+
 const infoDisplay = document.querySelector('#info')
 
 let elementToGo = CIRCLE_CLASS
